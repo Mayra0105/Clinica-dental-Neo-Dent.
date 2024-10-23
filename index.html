@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoDent - Clínica Dental</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+</head>
+<body>
+    <!-- Inicio -->
+    <div id="inicio" class="wrapper">
+        <header>
+            <nav class="navbar">
+                <div class="brand">
+                    <h2>N<span>eoDent</span></h2>
+                </div>
+                <ul class="menu">
+                    <li><a class="active" href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="Inicio" class="main">
+            <div class="info-content">
+                <h1>Bienvenido a <span class="highlight">NeoDent</span></h1>
+                <p>En NeoDent, cuidamos tu sonrisa con los mejores profesionales y la última tecnología en odontología.</p>    
+                <a href="#contacto">
+                    <button class="btn-principal">Agenda tu Cita</button>
+                </a>
+            </div>
+        </main>  
+    </div> 
+    <!-- Nosotros- Equipo -->
+    <div id="nosotros" class="equipo-section">
+        <h2>Conoce a nuestro equipo de profesionales</h2>
+        <div class="container-equipo">
+            <div class="equipo-card">
+                <div class="equipo-img">
+                    <img src="Juan.png" alt="Miembro del equipo">
+                </div>
+                <h3>Dr. Juan Pérez</h3>
+                <p>(Estética Dental)</p>
+                <p>Especialista en transformar sonrisas con blanqueamiento dental, carillas estéticas y tratamientos de diseño de sonrisa.</p>
+                <div class="equipo-icons">
+                    <a href="https://es.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="equipo-card">
+                <div class="equipo-img">
+                    <img src="Sofia.png" alt="Miembro del equipo">
+                </div>
+                <h3>Dra. Sofia Martínez</h3>
+                <p>(Ortodoncia)</p>
+                <p>Especialista en corregir la alineación dental y mejorar la mordida de los pacientes a través de tratamientos con brackets y ortodoncia invisible.</p>
+                <div class="equipo-icons">
+                    <a href="https://es.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="equipo-card">
+                <div class="equipo-img">
+                    <img src="Alberto.png" alt="Miembro del equipo">
+                </div>
+                <h3>Dr. Alberto López</h3>
+                <p>(Implantología Dental)</p>
+                <p>Experto en implantes dentales, ayudando a los pacientes a recuperar piezas dentales perdidas con los mejores implantes del mercado.</p>
+                <div class="equipo-icons">
+                    <a href="https://es.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="equipo-card">
+                <div class="equipo-img">
+                    <img src="Maria.png" alt="Miembro del equipo">
+                </div>
+                <h3>Dra. María González</h3>
+                <p>(Odontología General)</p>
+                <p>Proporciona cuidados preventivos y chequeos regulares para mantener una salud bucal óptima.</p>
+                <div class="equipo-icons">
+                    <a href="https://es.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Servicios -->
+    <div id="servicios" class="servicios">
+        <h3 class="servicios-encabezado">Nuestros Servicios</h3>
+        <div class="container-servicios">
+            <div class="card-servicio">
+                <i class="fas fa-tooth"></i>
+                <h4>Estética Dental</h4>
+                <p>Blanqueamiento y carillas para una sonrisa perfecta. Nuestros tratamientos de estética dental garantizan un resultado natural y duradero.</p>
+            </div>
+            <div class="card-servicio">
+                <i class="fas fa-smile-beam"></i>
+                <h4>Ortodoncia</h4>
+                <p>Tratamientos de ortodoncia para corregir la alineación de los dientes y mejorar la mordida. Utilizamos brackets tradicionales y ortodoncia invisible para todas las edades.</p>
+            </div>
+            <div class="card-servicio">
+                <i class="fas fa-tooth"></i>
+                <h4>Implantes Dentales</h4>
+                <p>Reemplazo de piezas dentales perdidas con implantes de alta calidad que ofrecen una solución duradera y estética.</p>
+            </div>
+            <div class="card-servicio">
+                <i class="fas fa-smile-beam"></i>
+                <h4>Odontología General</h4>
+                <p>Chequeos regulares, limpiezas y tratamientos preventivos para mantener una salud bucal en excelentes condiciones.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contacto - Formulario -->
+    <div id="contacto" class="contact-section">
+        <div class="contact-heading">
+            <h2>Agendar Cita</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="container-contact">
+            <div class="contact-image">
+                <img src="NeoDent.png" alt="Clínica NeoDent">
+            </div>
+            <div class="contact-form">
+                <form class="form-group">
+                    <input type="text" placeholder="Nombre" class="input-minimal" required>
+                    <input type="text" placeholder="Apellido" class="input-minimal" required>
+                    <input type="email" placeholder="Correo electrónico" class="input-minimal" required>
+                    <input type="tel" placeholder="Móvil" class="input-minimal" pattern="[0-9]{9}" required>
+                    <input type="date" class="input-minimal" required>
+                    <input type="time" class="input-minimal" required>
+                    <button type="submit" class="btn-minimal">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer"> 
+        <div class="footer-content">
+            <h2>NeoDent</h2>
+            <h5>Tu sonrisa, nuestra pasión</h5>
+        </div>
+        <div class="social-networks">
+            <a href="https://es.linkedin.com/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>  
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://x.com/?lang=es" target="_blank">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+        </div>
+
+        <div class="footer__copy">
+            <p>&copy; 2024 NeoDent. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

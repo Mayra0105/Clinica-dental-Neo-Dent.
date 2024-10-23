@@ -1,0 +1,397 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Wrapper */
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-image: url('clinica_neodent.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.brand h2 {
+  color: #2c3e50;
+}
+
+.brand span {
+  color: #3498db;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  color: #2c3e50;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+.menu a.active,
+.menu a:hover {
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Main Section */
+.main {
+  background: rgba(255, 255, 255, 0.85);
+  width: 100%;
+  max-width: 1200px;
+  margin: 6em auto 0 auto;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+.main h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+}
+
+.main .highlight {
+  color: #3498db;
+}
+
+.main p {
+  margin: 1em 0;
+  font-size: 1.1em;
+}
+
+.btn-principal {
+  padding: 0.75em 1.5em;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-principal:hover {
+  background-color: #2980b9;
+}
+
+/* Nosotros - Equipo Tarjetas */
+.equipo-section {
+  padding: 4em 1em;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.equipo-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  color: #2c3e50;
+}
+
+.container-equipo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.equipo-card {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  padding: 2em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto de hover - Movimiento */
+.equipo-card:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más grande */
+}
+
+.equipo-img img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1em;
+  transition: transform 0.3s ease;
+}
+
+/* Efecto de hover en la imagen - Zoom */
+.equipo-card:hover .equipo-img img {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen */
+}
+
+.equipo-card h3 {
+  font-size: 1.5em;
+  color: #2c3e50;
+}
+
+.equipo-card p {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 1em;
+}
+
+.equipo-icons a {
+  color: #2c3e50;
+  font-size: 1.2em;
+  margin: 0 0.5em;
+  transition: color 0.3s ease;
+}
+
+.equipo-icons a:hover {
+  color: #3498db;
+}
+
+/* Servicios */
+.servicios {
+  padding: 4em 1em;
+  text-align: center;
+}
+
+.servicios-encabezado {
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 1em;
+}
+
+.container-servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+
+.card-servicio {
+  flex: 1 1 300px;
+  max-width: 300px;
+  background-color: #fff;
+  padding: 2em 1em;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card-servicio i {
+  font-size: 3em;
+  color: #3498db;
+  margin-bottom: 0.5em;
+}
+
+.card-servicio h4 {
+  font-size: 1.5em;
+  color: #2c3e50;
+  margin-bottom: 0.5em;
+}
+
+.card-servicio p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Contacto */
+.contact-section {
+  padding: 4em 1em;
+  background-color: #f9f9f9;
+}
+
+.contact-heading h2 {
+  font-size: 2em;
+  color: #2c3e50;
+}
+
+.divider {
+  width: 60px;
+  height: 3px;
+  background-color: #3498db;
+  margin: 0.5em auto;
+}
+
+.container-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-image {
+  flex: 1;
+  max-width: 100%;
+  margin: 1em;
+  min-width: 400px;
+}
+
+.contact-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px; rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  flex: 1;
+  max-width: 100%;
+  margin: 1em;
+  background-color: #fff;
+  padding: 2em;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.input-minimal {
+  width: 100%;
+  padding: 0.75em;
+  margin-bottom: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #333;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease;
+}
+
+.input-minimal:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.btn-minimal {
+  width: 100%;
+  padding: 0.75em;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.btn-minimal:hover {
+  background-color: #2980b9;
+}
+
+/* Footer */
+.footer {
+  padding: 2em 1em;
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-content h2 {
+  font-size: 2em;
+}
+
+.footer-content h5 {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.social-networks {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.social-networks a {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.footer__copy {
+  font-size: 0.9em;
+}
+
+/* Media Queries */
+
+/* Tablets and small desktops */
+@media (max-width: 1024px) {
+  .navbar {
+      flex-wrap: wrap;
+  }
+
+  .menu {
+      width: 100%;
+      justify-content: center;
+      margin-top: 1em;
+  }
+
+  .nosotros,
+  .contact-section,
+  .container-servicios {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nosotros img,
+  .contact-section img,
+  .card-servicio,
+  .contact-form {
+      margin: 0 auto;
+  }
+
+  .masInfo,
+  .contact-form {
+      text-align: center;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 768px) {
+  .main h1 {
+      font-size: 2em;
+  }
+
+  .menu {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .menu a {
+      padding: 0.5em 0;
+  }
+
+  .servicios-encabezado,
+  .contact-heading h2 {
+      font-size: 1.8em;
+  }
+
+  .container-equipo {
+      flex-direction: column;
+  }
+}
